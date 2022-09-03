@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func start(with windnowScene: UIWindowScene) {
         
         let navigationController = UINavigationController()
-        
+        navigationController.isNavigationBarHidden = true
         let viewModel = SplashVM()
         coordinator = MainCoordinator(navigationController: navigationController,viewmodel: viewModel)
         coordinator?.start()

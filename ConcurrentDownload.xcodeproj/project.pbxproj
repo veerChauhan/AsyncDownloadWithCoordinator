@@ -33,6 +33,7 @@
 		FAA18DFC28C3F2F70065C70B /* CoenerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18DFB28C3F2F70065C70B /* CoenerButton.swift */; };
 		FAA18DFF28C3F4620065C70B /* SplashVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18DFE28C3F4620065C70B /* SplashVM.swift */; };
 		FAA18E0228C3F6A40065C70B /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18E0128C3F6A40065C70B /* ViewModels.swift */; };
+		FAA18E0528C3FE020065C70B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18E0428C3FE020065C70B /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		FAA18DFB28C3F2F70065C70B /* CoenerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoenerButton.swift; sourceTree = "<group>"; };
 		FAA18DFE28C3F4620065C70B /* SplashVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVM.swift; sourceTree = "<group>"; };
 		FAA18E0128C3F6A40065C70B /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
+		FAA18E0428C3FE020065C70B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		FA6FA6A028C3CE8800B693A7 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				FAA18E0328C3FDEB0065C70B /* SplashCoordinator */,
 				FAA18DFD28C3F44E0065C70B /* SplashVM */,
 				FA6FA6A528C3CF0F00B693A7 /* View */,
 			);
@@ -327,6 +330,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FAA18E0328C3FDEB0065C70B /* SplashCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FAA18E0428C3FE020065C70B /* MainCoordinator.swift */,
+			);
+			path = SplashCoordinator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -417,6 +428,7 @@
 				FA6FA6C528C3E99D00B693A7 /* ProfileViewController.swift in Sources */,
 				FAA18E0228C3F6A40065C70B /* ViewModels.swift in Sources */,
 				FA6FA68B28C3CDED00B693A7 /* SceneDelegate.swift in Sources */,
+				FAA18E0528C3FE020065C70B /* MainCoordinator.swift in Sources */,
 				FA6FA6D328C3EA1300B693A7 /* SettingsVM.swift in Sources */,
 				FAA18DFF28C3F4620065C70B /* SplashVM.swift in Sources */,
 				FA6FA6D528C3EA1B00B693A7 /* ProfileVM.swift in Sources */,
