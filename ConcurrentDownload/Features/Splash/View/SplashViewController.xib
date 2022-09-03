@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="ConcurrentDownload" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="ROM-2f-TTI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kOW-6U-z1D" customClass="LogoImage" customModule="ConcurrentDownload" customModuleProvider="target">
+                    <rect key="frame" x="62.5" y="163.5" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="FLr-o0-YLD"/>
+                        <constraint firstAttribute="width" secondItem="kOW-6U-z1D" secondAttribute="height" multiplier="1:1" id="zLT-R3-Ehq"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ujp-LW-L5E">
+                    <rect key="frame" x="62.5" y="433.5" width="250" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W2-68-FQi" customClass="CornerButton" customModule="ConcurrentDownload" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onClickLoginButton:" destination="-1" eventType="touchUpInside" id="KZv-Ns-dVO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKp-hc-PbW" customClass="CornerButton" customModule="ConcurrentDownload" customModuleProvider="target">
+                            <rect key="frame" x="130" y="0.0" width="120" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Registeration">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onClickRegistration:" destination="-1" eventType="touchUpInside" id="a7k-gT-bWc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="08H-6K-W9x"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+            <constraints>
+                <constraint firstItem="ujp-LW-L5E" firstAttribute="centerX" secondItem="kOW-6U-z1D" secondAttribute="centerX" id="7Re-o2-DkS"/>
+                <constraint firstItem="ujp-LW-L5E" firstAttribute="trailing" secondItem="kOW-6U-z1D" secondAttribute="trailing" id="HZc-BA-jbK"/>
+                <constraint firstItem="ujp-LW-L5E" firstAttribute="top" secondItem="kOW-6U-z1D" secondAttribute="bottom" constant="20" id="KSl-8u-TCj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ROM-2f-TTI" secondAttribute="trailing" id="RRs-Qa-qUT"/>
+                <constraint firstItem="kOW-6U-z1D" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-45" id="bUO-Qa-c6Z"/>
+                <constraint firstItem="kOW-6U-z1D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fa8-Uw-PsO"/>
+                <constraint firstAttribute="bottom" secondItem="ROM-2f-TTI" secondAttribute="bottom" id="m6s-hG-0fw"/>
+                <constraint firstItem="ROM-2f-TTI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qDL-DF-mdu"/>
+                <constraint firstItem="ujp-LW-L5E" firstAttribute="leading" secondItem="kOW-6U-z1D" secondAttribute="leading" id="qZB-yb-Qjk"/>
+                <constraint firstItem="ROM-2f-TTI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sXp-4F-sm6"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="93.103448275862078"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="5W2-68-FQi">
+            <size key="intrinsicContentSize" width="38" height="30"/>
+        </designable>
+        <designable name="QKp-hc-PbW">
+            <size key="intrinsicContentSize" width="91" height="30"/>
+        </designable>
+        <designable name="kOW-6U-z1D">
+            <size key="intrinsicContentSize" width="1024" height="1024"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="logo" width="1024" height="1024"/>
+        <image name="splash" width="1700" height="3500"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
