@@ -25,9 +25,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navigationController = UINavigationController()
         navigationController.isNavigationBarHidden = true
-        let viewModel = SplashVM()
-        coordinator = MainCoordinator(navigationController: navigationController,viewmodel: viewModel)
-        coordinator?.start()
+        coordinator = MainCoordinator(navigationController: navigationController)
+        coordinator?.configure()
         window = UIWindow(windowScene: windnowScene)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
@@ -60,7 +59,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
 }
 

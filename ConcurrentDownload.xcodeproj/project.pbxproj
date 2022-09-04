@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA518A9E28C537A300E46163 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA518A9D28C537A300E46163 /* RegisterCoordinator.swift */; };
+		FA518AA028C53D4300E46163 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA518A9F28C53D4300E46163 /* SplashCoordinator.swift */; };
+		FA518AA228C540C600E46163 /* FormTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA518AA128C540C600E46163 /* FormTF.swift */; };
 		FA6FA68928C3CDED00B693A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FA68828C3CDED00B693A7 /* AppDelegate.swift */; };
 		FA6FA68B28C3CDED00B693A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FA68A28C3CDED00B693A7 /* SceneDelegate.swift */; };
 		FA6FA69228C3CDEF00B693A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6FA69128C3CDEF00B693A7 /* Assets.xcassets */; };
@@ -34,9 +37,13 @@
 		FAA18DFF28C3F4620065C70B /* SplashVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18DFE28C3F4620065C70B /* SplashVM.swift */; };
 		FAA18E0228C3F6A40065C70B /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18E0128C3F6A40065C70B /* ViewModels.swift */; };
 		FAA18E0528C3FE020065C70B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18E0428C3FE020065C70B /* MainCoordinator.swift */; };
+		FAA18E0828C4137D0065C70B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA18E0728C4137D0065C70B /* LoginCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA518A9D28C537A300E46163 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		FA518A9F28C53D4300E46163 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		FA518AA128C540C600E46163 /* FormTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTF.swift; sourceTree = "<group>"; };
 		FA6FA68528C3CDED00B693A7 /* ConcurrentDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrentDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6FA68828C3CDED00B693A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6FA68A28C3CDED00B693A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +73,7 @@
 		FAA18DFE28C3F4620065C70B /* SplashVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVM.swift; sourceTree = "<group>"; };
 		FAA18E0128C3F6A40065C70B /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
 		FAA18E0428C3FE020065C70B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		FAA18E0728C4137D0065C70B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA518A9C28C5379200E46163 /* RegisterCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA518A9D28C537A300E46163 /* RegisterCoordinator.swift */,
+			);
+			path = RegisterCoordinator;
+			sourceTree = "<group>";
+		};
 		FA6FA67C28C3CDED00B693A7 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +186,7 @@
 		FA6FA6A628C3E67300B693A7 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				FAA18E0428C3FE020065C70B /* MainCoordinator.swift */,
 				FA6FA6A728C3E69700B693A7 /* Coordinator.swift */,
 			);
 			path = Coordinator;
@@ -196,6 +213,7 @@
 		FA6FA6AF28C3E94200B693A7 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				FA518A9C28C5379200E46163 /* RegisterCoordinator */,
 				FA6FA6CB28C3E9EA00B693A7 /* ViewModel */,
 				FA6FA6B328C3E95D00B693A7 /* View */,
 			);
@@ -205,6 +223,7 @@
 		FA6FA6B028C3E94900B693A7 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				FAA18E0628C4136F0065C70B /* LoginCoordinator */,
 				FA6FA6CE28C3E9F800B693A7 /* ViewModel */,
 				FA6FA6B428C3E96200B693A7 /* View */,
 			);
@@ -310,6 +329,7 @@
 			children = (
 				FAA18DF928C3EEB80065C70B /* LogoImageiew.swift */,
 				FAA18DFB28C3F2F70065C70B /* CoenerButton.swift */,
+				FA518AA128C540C600E46163 /* FormTF.swift */,
 			);
 			path = ExtendedKIT;
 			sourceTree = "<group>";
@@ -333,9 +353,17 @@
 		FAA18E0328C3FDEB0065C70B /* SplashCoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				FAA18E0428C3FE020065C70B /* MainCoordinator.swift */,
+				FA518A9F28C53D4300E46163 /* SplashCoordinator.swift */,
 			);
 			path = SplashCoordinator;
+			sourceTree = "<group>";
+		};
+		FAA18E0628C4136F0065C70B /* LoginCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FAA18E0728C4137D0065C70B /* LoginCoordinator.swift */,
+			);
+			path = LoginCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,8 +444,10 @@
 			files = (
 				FA6FA6B728C3E96F00B693A7 /* LoginViewController.swift in Sources */,
 				FAA18DFA28C3EEB80065C70B /* LogoImageiew.swift in Sources */,
+				FAA18E0828C4137D0065C70B /* LoginCoordinator.swift in Sources */,
 				FA6FA6A828C3E69700B693A7 /* Coordinator.swift in Sources */,
 				FA6FA6BB28C3E97900B693A7 /* RegisterViewController.swift in Sources */,
+				FA518AA028C53D4300E46163 /* SplashCoordinator.swift in Sources */,
 				FA6FA6A328C3CF0A00B693A7 /* SplashViewController.swift in Sources */,
 				FAA18DFC28C3F2F70065C70B /* CoenerButton.swift in Sources */,
 				FA6FA6AD28C3E92C00B693A7 /* DashboardViewController.swift in Sources */,
@@ -430,8 +460,10 @@
 				FA6FA68B28C3CDED00B693A7 /* SceneDelegate.swift in Sources */,
 				FAA18E0528C3FE020065C70B /* MainCoordinator.swift in Sources */,
 				FA6FA6D328C3EA1300B693A7 /* SettingsVM.swift in Sources */,
+				FA518A9E28C537A300E46163 /* RegisterCoordinator.swift in Sources */,
 				FAA18DFF28C3F4620065C70B /* SplashVM.swift in Sources */,
 				FA6FA6D528C3EA1B00B693A7 /* ProfileVM.swift in Sources */,
+				FA518AA228C540C600E46163 /* FormTF.swift in Sources */,
 				FA6FA6C028C3E98D00B693A7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

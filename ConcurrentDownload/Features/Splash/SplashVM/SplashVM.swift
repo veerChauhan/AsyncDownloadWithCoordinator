@@ -15,9 +15,11 @@ protocol SplashScreen: ViewModel {
 
 class SplashVM: SplashScreen {
     
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: SplashCoordinator?
 
-    init(){}
+    init(with coordinator: SplashCoordinator){
+        self.coordinator = coordinator
+    }
     func login() {
         print("Clicked on Login")
         coordinator?.login()
