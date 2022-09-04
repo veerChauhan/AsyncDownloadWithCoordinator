@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 class RegisterCoordinator : Coordinator {
+    
     var childCoordinators: [Coordinator] = [Coordinator]()
     var navigationController: UINavigationController
 

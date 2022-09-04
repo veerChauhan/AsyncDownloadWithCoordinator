@@ -17,19 +17,24 @@ protocol Login {
 class LoginVM: Login {
     
     var coordinator: LoginCoordinator?
+    init(with coordinator: LoginCoordinator){
+        self.coordinator = coordinator
+    }
     
     func login(with email: String, password: String) {
         
-        coordinator.
         print(email, password)
+        coordinator?.dashboard()
     }
     
     func register() {
         print("Clicked on Register")
+        coordinator?.register()
     }
     
     func forgotPassword() {
         print("Clicked on Forgot Password")
+        coordinator?.forgotPassword()
     }
     
 }

@@ -1,15 +1,14 @@
 //
-//  RegisterViewController.swift
+//  ForgotPasswordViewController.swift
 //  ConcurrentDownload
 //
-//  Created by Ravi Ranjan on 04/09/22.
+//  Created by Ravi Ranjan on 05/09/22.
 //
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class ForgotPasswordViewController: UIViewController {
 
-    var viewModel : RegisterVM?
     override func viewDidLoad() {
         super.viewDidLoad()
 

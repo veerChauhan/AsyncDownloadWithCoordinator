@@ -9,6 +9,7 @@ import UIKit
 
 class DashboardViewController: UIViewController {
 
+    weak var viewmodel : DashboardVM?
     override func viewDidLoad() {
         super.viewDidLoad()
 

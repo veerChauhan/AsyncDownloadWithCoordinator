@@ -10,6 +10,11 @@
 		FA518A9E28C537A300E46163 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA518A9D28C537A300E46163 /* RegisterCoordinator.swift */; };
 		FA518AA028C53D4300E46163 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA518A9F28C53D4300E46163 /* SplashCoordinator.swift */; };
 		FA518AA228C540C600E46163 /* FormTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA518AA128C540C600E46163 /* FormTF.swift */; };
+		FA518AA528C5476000E46163 /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA518AA428C5476000E46163 /* DashboardCoordinator.swift */; };
+		FA518AAC28C548B500E46163 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA518AAA28C548B500E46163 /* ForgotPasswordViewController.swift */; };
+		FA518AAD28C548B500E46163 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA518AAB28C548B500E46163 /* ForgotPasswordViewController.xib */; };
+		FA518AAF28C548C500E46163 /* ForgotPasswordVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA518AAE28C548C500E46163 /* ForgotPasswordVM.swift */; };
+		FA518AB128C548D100E46163 /* ForgotPasswordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA518AB028C548D100E46163 /* ForgotPasswordCoordinator.swift */; };
 		FA6FA68928C3CDED00B693A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FA68828C3CDED00B693A7 /* AppDelegate.swift */; };
 		FA6FA68B28C3CDED00B693A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FA68A28C3CDED00B693A7 /* SceneDelegate.swift */; };
 		FA6FA69228C3CDEF00B693A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6FA69128C3CDEF00B693A7 /* Assets.xcassets */; };
@@ -44,6 +49,11 @@
 		FA518A9D28C537A300E46163 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		FA518A9F28C53D4300E46163 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		FA518AA128C540C600E46163 /* FormTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTF.swift; sourceTree = "<group>"; };
+		FA518AA428C5476000E46163 /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		FA518AAA28C548B500E46163 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		FA518AAB28C548B500E46163 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		FA518AAE28C548C500E46163 /* ForgotPasswordVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVM.swift; sourceTree = "<group>"; };
+		FA518AB028C548D100E46163 /* ForgotPasswordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCoordinator.swift; sourceTree = "<group>"; };
 		FA6FA68528C3CDED00B693A7 /* ConcurrentDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrentDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6FA68828C3CDED00B693A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6FA68A28C3CDED00B693A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,12 +97,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA518A9C28C5379200E46163 /* RegisterCoordinator */ = {
+		FA518A9C28C5379200E46163 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				FA518A9D28C537A300E46163 /* RegisterCoordinator.swift */,
 			);
-			path = RegisterCoordinator;
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FA518AA328C5474E00E46163 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA518AA428C5476000E46163 /* DashboardCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FA518AA628C5486900E46163 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				FA518AA928C5488000E46163 /* Coordinator */,
+				FA518AA828C5487800E46163 /* ViewModel */,
+				FA518AA728C5487300E46163 /* View */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		FA518AA728C5487300E46163 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA518AAA28C548B500E46163 /* ForgotPasswordViewController.swift */,
+				FA518AAB28C548B500E46163 /* ForgotPasswordViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA518AA828C5487800E46163 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA518AAE28C548C500E46163 /* ForgotPasswordVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA518AA928C5488000E46163 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA518AB028C548D100E46163 /* ForgotPasswordCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		FA6FA67C28C3CDED00B693A7 = {
@@ -147,6 +200,7 @@
 		FA6FA69E28C3CE3400B693A7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				FA518AA628C5486900E46163 /* ForgotPassword */,
 				FA6FA6B228C3E95600B693A7 /* Profile */,
 				FA6FA6B128C3E94E00B693A7 /* Settings */,
 				FA6FA6B028C3E94900B693A7 /* Login */,
@@ -167,7 +221,7 @@
 		FA6FA6A028C3CE8800B693A7 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				FAA18E0328C3FDEB0065C70B /* SplashCoordinator */,
+				FAA18E0328C3FDEB0065C70B /* Coordinator */,
 				FAA18DFD28C3F44E0065C70B /* SplashVM */,
 				FA6FA6A528C3CF0F00B693A7 /* View */,
 			);
@@ -195,6 +249,7 @@
 		FA6FA6A928C3E90A00B693A7 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				FA518AA328C5474E00E46163 /* Coordinator */,
 				FA6FA6C828C3E9D700B693A7 /* ViewModel */,
 				FA6FA6AA28C3E91D00B693A7 /* View */,
 			);
@@ -213,7 +268,7 @@
 		FA6FA6AF28C3E94200B693A7 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				FA518A9C28C5379200E46163 /* RegisterCoordinator */,
+				FA518A9C28C5379200E46163 /* Coordinator */,
 				FA6FA6CB28C3E9EA00B693A7 /* ViewModel */,
 				FA6FA6B328C3E95D00B693A7 /* View */,
 			);
@@ -223,7 +278,7 @@
 		FA6FA6B028C3E94900B693A7 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				FAA18E0628C4136F0065C70B /* LoginCoordinator */,
+				FAA18E0628C4136F0065C70B /* Coordinator */,
 				FA6FA6CE28C3E9F800B693A7 /* ViewModel */,
 				FA6FA6B428C3E96200B693A7 /* View */,
 			);
@@ -350,20 +405,20 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		FAA18E0328C3FDEB0065C70B /* SplashCoordinator */ = {
+		FAA18E0328C3FDEB0065C70B /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				FA518A9F28C53D4300E46163 /* SplashCoordinator.swift */,
 			);
-			path = SplashCoordinator;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		FAA18E0628C4136F0065C70B /* LoginCoordinator */ = {
+		FAA18E0628C4136F0065C70B /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				FAA18E0728C4137D0065C70B /* LoginCoordinator.swift */,
 			);
-			path = LoginCoordinator;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +482,7 @@
 				FA6FA6B828C3E96F00B693A7 /* LoginViewController.xib in Resources */,
 				FA6FA69528C3CDEF00B693A7 /* LaunchScreen.storyboard in Resources */,
 				FA6FA6C628C3E99D00B693A7 /* ProfileViewController.xib in Resources */,
+				FA518AAD28C548B500E46163 /* ForgotPasswordViewController.xib in Resources */,
 				FA6FA6A428C3CF0A00B693A7 /* SplashViewController.xib in Resources */,
 				FA6FA69228C3CDEF00B693A7 /* Assets.xcassets in Resources */,
 				FA6FA6AE28C3E92C00B693A7 /* DashboardViewController.xib in Resources */,
@@ -443,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6FA6B728C3E96F00B693A7 /* LoginViewController.swift in Sources */,
+				FA518AA528C5476000E46163 /* DashboardCoordinator.swift in Sources */,
 				FAA18DFA28C3EEB80065C70B /* LogoImageiew.swift in Sources */,
 				FAA18E0828C4137D0065C70B /* LoginCoordinator.swift in Sources */,
 				FA6FA6A828C3E69700B693A7 /* Coordinator.swift in Sources */,
@@ -452,16 +509,19 @@
 				FAA18DFC28C3F2F70065C70B /* CoenerButton.swift in Sources */,
 				FA6FA6AD28C3E92C00B693A7 /* DashboardViewController.swift in Sources */,
 				FA6FA6CD28C3E9F400B693A7 /* RegisterVM.swift in Sources */,
+				FA518AAC28C548B500E46163 /* ForgotPasswordViewController.swift in Sources */,
 				FA6FA6CA28C3E9E500B693A7 /* DashboardVM.swift in Sources */,
 				FA6FA68928C3CDED00B693A7 /* AppDelegate.swift in Sources */,
 				FA6FA6D028C3EA0000B693A7 /* LoginVM.swift in Sources */,
 				FA6FA6C528C3E99D00B693A7 /* ProfileViewController.swift in Sources */,
 				FAA18E0228C3F6A40065C70B /* ViewModels.swift in Sources */,
 				FA6FA68B28C3CDED00B693A7 /* SceneDelegate.swift in Sources */,
+				FA518AAF28C548C500E46163 /* ForgotPasswordVM.swift in Sources */,
 				FAA18E0528C3FE020065C70B /* MainCoordinator.swift in Sources */,
 				FA6FA6D328C3EA1300B693A7 /* SettingsVM.swift in Sources */,
 				FA518A9E28C537A300E46163 /* RegisterCoordinator.swift in Sources */,
 				FAA18DFF28C3F4620065C70B /* SplashVM.swift in Sources */,
+				FA518AB128C548D100E46163 /* ForgotPasswordCoordinator.swift in Sources */,
 				FA6FA6D528C3EA1B00B693A7 /* ProfileVM.swift in Sources */,
 				FA518AA228C540C600E46163 /* FormTF.swift in Sources */,
 				FA6FA6C028C3E98D00B693A7 /* SettingsViewController.swift in Sources */,

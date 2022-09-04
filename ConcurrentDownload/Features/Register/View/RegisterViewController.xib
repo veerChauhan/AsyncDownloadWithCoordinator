@@ -11,21 +11,262 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="ConcurrentDownload" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="f5B-8S-Eox" id="jLd-gh-Tvo"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="f5B-8S-Eox">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4Vv-fB-XQG">
+                    <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="kg0-ne-dZZ"/>
+                    </constraints>
+                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Come and join us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaq-mM-aJx">
+                    <rect key="frame" x="10" y="349" width="394" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xw3-dp-dQ9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="26"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpG-PX-Xid" customClass="FormTextView" customModule="ConcurrentDownload" customModuleProvider="target">
+                    <rect key="frame" x="20" y="409" width="374" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o45-Ll-isP">
+                            <rect key="frame" x="15" y="10" width="359" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="jQK-nu-By1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                            <color key="textColor" systemColor="systemIndigoColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wxf-We-Lp1">
+                            <rect key="frame" x="15" y="31" width="354" height="49"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" textContentType="name"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="o45-Ll-isP" secondAttribute="trailing" id="38l-xs-sRs"/>
+                        <constraint firstAttribute="height" constant="80" id="KVH-ag-r3t"/>
+                        <constraint firstAttribute="trailing" secondItem="wxf-We-Lp1" secondAttribute="trailing" constant="5" id="ci0-er-zbY"/>
+                        <constraint firstItem="wxf-We-Lp1" firstAttribute="leading" secondItem="zpG-PX-Xid" secondAttribute="leading" constant="15" id="fk0-J9-EvL"/>
+                        <constraint firstItem="o45-Ll-isP" firstAttribute="leading" secondItem="zpG-PX-Xid" secondAttribute="leading" constant="15" id="gdk-kU-03u"/>
+                        <constraint firstAttribute="bottom" secondItem="wxf-We-Lp1" secondAttribute="bottom" id="hoQ-3e-lz0"/>
+                        <constraint firstItem="o45-Ll-isP" firstAttribute="top" secondItem="zpG-PX-Xid" secondAttribute="top" constant="10" id="pU9-00-ZkZ"/>
+                        <constraint firstItem="wxf-We-Lp1" firstAttribute="top" secondItem="o45-Ll-isP" secondAttribute="bottom" id="ueX-HF-ZwR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backGroundColor">
+                            <color key="value" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1HE-Je-R65" customClass="FormTextView" customModule="ConcurrentDownload" customModuleProvider="target">
+                    <rect key="frame" x="20" y="499" width="374" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-Wc-DoR">
+                            <rect key="frame" x="15" y="10" width="359" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="3nI-yW-aVK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                            <color key="textColor" systemColor="systemIndigoColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fC5-2I-ULw">
+                            <rect key="frame" x="15" y="31" width="354" height="49"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" textContentType="email"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="fC5-2I-ULw" firstAttribute="leading" secondItem="1HE-Je-R65" secondAttribute="leading" constant="15" id="3kj-jC-1JL"/>
+                        <constraint firstAttribute="trailing" secondItem="fC5-2I-ULw" secondAttribute="trailing" constant="5" id="HQw-Ci-SA3"/>
+                        <constraint firstAttribute="trailing" secondItem="fvf-Wc-DoR" secondAttribute="trailing" id="MdU-Cy-rlW"/>
+                        <constraint firstAttribute="bottom" secondItem="fC5-2I-ULw" secondAttribute="bottom" id="dEb-Le-yJO"/>
+                        <constraint firstAttribute="height" constant="80" id="dv0-ff-dEK"/>
+                        <constraint firstItem="fvf-Wc-DoR" firstAttribute="leading" secondItem="1HE-Je-R65" secondAttribute="leading" constant="15" id="mw4-7q-fdV"/>
+                        <constraint firstItem="fvf-Wc-DoR" firstAttribute="top" secondItem="1HE-Je-R65" secondAttribute="top" constant="10" id="myb-Lo-a2I"/>
+                        <constraint firstItem="fC5-2I-ULw" firstAttribute="top" secondItem="fvf-Wc-DoR" secondAttribute="bottom" id="qqr-NH-vBW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backGroundColor">
+                            <color key="value" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csn-TU-OA0" customClass="FormTextView" customModule="ConcurrentDownload" customModuleProvider="target">
+                    <rect key="frame" x="20" y="589" width="374" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQz-G1-4lj">
+                            <rect key="frame" x="15" y="10" width="359" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="bNr-Lm-yqy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                            <color key="textColor" systemColor="systemIndigoColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NWA-3K-1gE">
+                            <rect key="frame" x="15" y="31" width="354" height="49"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xQz-G1-4lj" secondAttribute="trailing" id="FWg-OD-IiH"/>
+                        <constraint firstItem="xQz-G1-4lj" firstAttribute="leading" secondItem="csn-TU-OA0" secondAttribute="leading" constant="15" id="MSX-Xz-g0R"/>
+                        <constraint firstAttribute="height" constant="80" id="Myo-Uc-GDV"/>
+                        <constraint firstAttribute="bottom" secondItem="NWA-3K-1gE" secondAttribute="bottom" id="gp0-Qd-LBo"/>
+                        <constraint firstItem="NWA-3K-1gE" firstAttribute="top" secondItem="xQz-G1-4lj" secondAttribute="bottom" id="hVH-TD-V7I"/>
+                        <constraint firstItem="xQz-G1-4lj" firstAttribute="top" secondItem="csn-TU-OA0" secondAttribute="top" constant="10" id="k41-pw-KqN"/>
+                        <constraint firstItem="NWA-3K-1gE" firstAttribute="leading" secondItem="csn-TU-OA0" secondAttribute="leading" constant="15" id="kCQ-ag-Kra"/>
+                        <constraint firstAttribute="trailing" secondItem="NWA-3K-1gE" secondAttribute="trailing" constant="5" id="y7N-0o-SUQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backGroundColor">
+                            <color key="value" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd6-aX-ljN" customClass="CornerButton" customModule="ConcurrentDownload" customModuleProvider="target">
+                    <rect key="frame" x="20" y="689" width="374" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="neM-45-hQ4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="19"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Register">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YTN-Wj-AFu">
+                    <rect key="frame" x="20" y="749" width="374" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bke-Oq-4UE" customClass="CornerButton" customModule="ConcurrentDownload" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="182" height="50"/>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6GN-Dk-4i8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Forgot Password">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C27-nI-1fw" customClass="CornerButton" customModule="ConcurrentDownload" customModuleProvider="target">
+                            <rect key="frame" x="192" y="0.0" width="182" height="50"/>
+                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="uUs-px-oDm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="eaN-DI-vv5"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="AQP-WW-wlT"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="csn-TU-OA0" firstAttribute="leading" secondItem="AQP-WW-wlT" secondAttribute="leading" constant="20" id="A85-28-c3z"/>
+                <constraint firstItem="nd6-aX-ljN" firstAttribute="top" secondItem="csn-TU-OA0" secondAttribute="bottom" constant="20" id="CDg-9c-N4J"/>
+                <constraint firstItem="AQP-WW-wlT" firstAttribute="trailing" secondItem="zaq-mM-aJx" secondAttribute="trailing" constant="10" id="CQE-wN-Wza"/>
+                <constraint firstItem="AQP-WW-wlT" firstAttribute="trailing" secondItem="csn-TU-OA0" secondAttribute="trailing" constant="20" id="DLw-RP-5F6"/>
+                <constraint firstItem="YTN-Wj-AFu" firstAttribute="top" secondItem="nd6-aX-ljN" secondAttribute="bottom" constant="10" id="Eae-L1-qES"/>
+                <constraint firstItem="zaq-mM-aJx" firstAttribute="top" secondItem="4Vv-fB-XQG" secondAttribute="bottom" constant="5" id="GgW-s4-4CD"/>
+                <constraint firstItem="nd6-aX-ljN" firstAttribute="leading" secondItem="AQP-WW-wlT" secondAttribute="leading" constant="20" id="Img-pG-dr7"/>
+                <constraint firstItem="4Vv-fB-XQG" firstAttribute="top" secondItem="AQP-WW-wlT" secondAttribute="top" id="QTs-tT-vR7"/>
+                <constraint firstItem="4Vv-fB-XQG" firstAttribute="leading" secondItem="AQP-WW-wlT" secondAttribute="leading" id="RKA-h7-pRs"/>
+                <constraint firstItem="AQP-WW-wlT" firstAttribute="trailing" secondItem="zpG-PX-Xid" secondAttribute="trailing" constant="20" id="U1q-kI-dg3"/>
+                <constraint firstItem="zpG-PX-Xid" firstAttribute="leading" secondItem="AQP-WW-wlT" secondAttribute="leading" constant="20" id="Wyl-Nc-aRw"/>
+                <constraint firstItem="1HE-Je-R65" firstAttribute="top" secondItem="zpG-PX-Xid" secondAttribute="bottom" constant="10" id="XEI-Fp-tD5"/>
+                <constraint firstItem="zpG-PX-Xid" firstAttribute="top" secondItem="zaq-mM-aJx" secondAttribute="bottom" constant="20" id="YCH-FV-kAJ"/>
+                <constraint firstItem="AQP-WW-wlT" firstAttribute="trailing" secondItem="4Vv-fB-XQG" secondAttribute="trailing" id="cV7-fe-QUO"/>
+                <constraint firstItem="AQP-WW-wlT" firstAttribute="trailing" secondItem="nd6-aX-ljN" secondAttribute="trailing" constant="20" id="e6g-Fa-Wab"/>
+                <constraint firstItem="AQP-WW-wlT" firstAttribute="trailing" secondItem="YTN-Wj-AFu" secondAttribute="trailing" constant="20" id="fzq-Ie-VzO"/>
+                <constraint firstItem="YTN-Wj-AFu" firstAttribute="leading" secondItem="AQP-WW-wlT" secondAttribute="leading" constant="20" id="gK8-jL-cWo"/>
+                <constraint firstItem="zaq-mM-aJx" firstAttribute="leading" secondItem="AQP-WW-wlT" secondAttribute="leading" constant="10" id="gff-fX-MpV"/>
+                <constraint firstItem="1HE-Je-R65" firstAttribute="leading" secondItem="AQP-WW-wlT" secondAttribute="leading" constant="20" id="ihQ-UQ-iqO"/>
+                <constraint firstItem="AQP-WW-wlT" firstAttribute="trailing" secondItem="1HE-Je-R65" secondAttribute="trailing" constant="20" id="owa-jA-u2l"/>
+                <constraint firstItem="csn-TU-OA0" firstAttribute="top" secondItem="1HE-Je-R65" secondAttribute="bottom" constant="10" id="uHS-AG-JvT"/>
+            </constraints>
             <point key="canvasLocation" x="133" y="94"/>
         </view>
     </objects>
+    <designables>
+        <designable name="C27-nI-1fw">
+            <size key="intrinsicContentSize" width="43" height="29"/>
+        </designable>
+        <designable name="bke-Oq-4UE">
+            <size key="intrinsicContentSize" width="127" height="29"/>
+        </designable>
+        <designable name="nd6-aX-ljN">
+            <size key="intrinsicContentSize" width="92" height="35"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="LoginLogo" width="660" height="538"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

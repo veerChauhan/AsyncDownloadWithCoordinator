@@ -23,18 +23,20 @@ class SplashCoordinator :Coordinator {
     func configure() {
         let spalashScreen = SplashViewController()
         let viewModel = SplashVM(with: self)
-//        viewModel.coordinator = self
         spalashScreen.viewModel = viewModel
+        
         navigationController.pushViewController(spalashScreen, animated: true)
     }
     
     func register(){
         let registerCoordinator = RegisterCoordinator(navigationController: self.navigationController)
+        childCoordinators.append(registerCoordinator)
         registerCoordinator.configure()
     }
     
     func login(){
         let loginCoordinator = LoginCoordinator(navigationController: self.navigationController)
+        childCoordinators.append(loginCoordinator)
         loginCoordinator.configure()
     }
     
